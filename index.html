@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohamad Riyas — Software Engineer portfolio showcasing projects, skills, and experience.">
+  <title>Mohamad Riyas | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">MR<span>.</span></a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Open navigation" aria-expanded="false"
+        aria-controls="nav-links">☰</button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle"
+          aria-label="Switch color theme">☀️</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">SOFTWARE ENGINEER</p>
+        <h1>Hi, I'm <span>Mohamad Riyas.</span></h1>
+        <h2>I build digital experiences.</h2>
+        <p class="hero-description">
+          I'm a Software Engineering undergraduate passionate about
+          web development, software engineering, and building useful
+          solutions to real-world problems.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore My Work ↗</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">MR</div>
+        <p class="status"><span></span> Open to opportunities</p>
+        <p class="hero-card-title">Building. Learning. Improving.</p>
+        <p class="muted">Software Engineering · Web Development</p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-description">
+        I'm pursuing a BEng (Hons) in Software Engineering at the
+        Informatics Institute of Technology, in collaboration with
+        the University of Westminster. I enjoy creating web
+        applications, exploring new technologies, and turning ideas
+        into practical software.
+      </p>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Education</h3>
+          <p>BEng (Hons) Software Engineering</p>
+          <p class="muted">IIT · University of Westminster</p>
+        </article>
+        <article class="info-card">
+          <h3>Interests</h3>
+          <p>Frontend development, full-stack applications, UI/UX and problem solving.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <p class="eyebrow">WHAT I WORK WITH</p>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <span>HTML5</span><span>CSS3</span>
+        <span>JavaScript</span><span>React</span>
+        <span>Python</span><span>Java</span>
+        <span>MySQL</span><span>Firebase</span>
+        <span>Git & GitHub</span><span>Figma</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-description">
+        A selection of projects I've contributed to and developed.
+      </p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">PROJECT / 01</div>
+          <h3>SyncSpace</h3>
+          <p>A collaborative workspace with interview tools, recording,
+            and integrated coding and whiteboard features.</p>
+          <p class="tech-stack">React · Node.js · Socket.IO · MongoDB</p>
+          <a href="https://github.com/Nivo16/SyncSpace_Workplace_AxleroProject1"
+            target="_blank" rel="noopener noreferrer">View Source ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">PROJECT / 02</div>
+          <h3>Securefy</h3>
+          <p>A smart locker management system featuring locker
+            availability, bookings, and QR-based access.</p>
+          <p class="tech-stack">React · Firebase · Firestore</p>
+          <a href="https://securefy.online"
+            target="_blank" rel="noopener noreferrer">Visit Website ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">PROJECT / 03</div>
+          <h3>NaviGuard</h3>
+          <p>An Android application project focused on live location
+            tracking and map-based features.</p>
+          <p class="tech-stack">Kotlin · Jetpack Compose · Firebase · Maps</p>
+          <a href="https://github.com/Mohamad-Riyas"
+            target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 class="section-title">Have a project in mind?</h2>
+      <p class="section-description">
+        I'm interested in software engineering opportunities,
+        collaboration, and building meaningful digital products.
+      </p>
+      <div class="contact-links">
+        <a class="button primary"
+          href="mailto:riyas.official.2003@gmail.com">Email Me ↗</a>
+        <a class="button secondary"
+          href="https://github.com/Mohamad-Riyas"
+          target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="button secondary"
+          href="https://linkedin.com/in/mohamad-riyas-94735b350/"
+          target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mohamad Riyas. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+</body>
+</html>
