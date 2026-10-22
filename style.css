@@ -206,3 +206,52 @@ button { font: inherit; cursor: pointer; }
   .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .section { padding-block: 48px; }
 }
+
+.project-modal {
+  width: min(520px, 90%);
+  padding: 0;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.project-modal::backdrop {
+  background: rgb(0 0 0 / 75%);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  position: relative;
+  padding: 30px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 12px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.project-modal h2 {
+  padding-right: 25px;
+}
+
+.project-modal[open] {
+  animation: modal-enter .2s ease-out;
+}
+
+@keyframes modal-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-modal[open] {
+    animation: none;
+  }
+}
