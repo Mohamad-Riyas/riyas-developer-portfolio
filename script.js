@@ -107,3 +107,58 @@ projectModal.addEventListener("click", (event) => {
     projectModal.close();
   }
 });
+
+
+const projectData = {
+  syncspace: {
+    title: "SyncSpace",
+    description:
+      "A collaborative workspace with interview mode, recording, coding tools and a collaborative whiteboard.",
+    tech: "React · Node.js · Socket.IO · MongoDB",
+    link: "https://github.com/Nivo16/SyncSpace_Workplace_AxleroProject1"
+  },
+  securefy: {
+    title: "Securefy",
+    description:
+      "A smart locker management system featuring availability, bookings and QR-based access.",
+    tech: "React · Firebase · Firestore",
+    link: "https://securefy.online"
+  },
+  naviguard: {
+    title: "NaviGuard",
+    description:
+      "An Android application project focused on live location tracking and map features.",
+    tech: "Kotlin · Jetpack Compose · Firebase · Google Maps",
+    link: "https://github.com/Mohamad-Riyas"
+  }
+};
+
+const projectModal = document.getElementById("project-modal");
+const modalClose = document.getElementById("modal-close");
+
+document.querySelectorAll(".project-details").forEach((button) => {
+  button.addEventListener("click", () => {
+    const project = projectData[button.dataset.project];
+
+    if (!project || !projectModal) return;
+
+    document.getElementById("modal-title").textContent = project.title;
+    document.getElementById("modal-description").textContent =
+      project.description;
+    document.getElementById("modal-tech").textContent = project.tech;
+    document.getElementById("modal-link").href = project.link;
+
+    projectModal.showModal();
+  });
+});
+
+modalClose.addEventListener("click", () => {
+  projectModal.close();
+});
+
+projectModal.addEventListener("click", (event) => {
+  if (event.target === projectModal) {
+    projectModal.close();
+  }
+});
+
